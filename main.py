@@ -2,9 +2,6 @@ from random import randint
 from time import sleep
 
 
-
-
-
 class Graph:
 	def __init__(self, vertices):
 		self.graph = []
@@ -107,5 +104,6 @@ class Graph:
 				exit(0)
 
 
-g = Graph('graph.txt')
-g.run()
+if __name__ == '__main__':
+	g = Graph('graph.txt')
+	g.run()
